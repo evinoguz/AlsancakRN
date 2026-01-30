@@ -51,12 +51,12 @@ export const Tahsilat = () => {
 
   // Tablo kolonları
   const COLUMN_WIDTHS = useResponsiveColumns({
-    YIL: {mobile: 0.25, tablet: 0.12},
-    AY: {mobile: 0.15, tablet: 0.08},
-    AYLAR: {mobile: 0.25, tablet: 0.14},
-    TAHSILATTUT: {mobile: 0.35, tablet: 0.18},
-    ODTUT: {mobile: 0.35, tablet: 0.18},
-    KALTUT: {mobile: 0.35, tablet: 0.18},
+    YIL: {mobile: 0.25, tablet: 0.2},
+    AY: {mobile: 0.15, tablet: 0.1},
+    AYLAR: {mobile: 0.25, tablet: 0.1},
+    TAHSILATTUT: {mobile: 0.35, tablet: 0.2},
+    ODTUT: {mobile: 0.35, tablet: 0.2},
+    KALTUT: {mobile: 0.35, tablet: 0.2},
   });
 
   const columns = [

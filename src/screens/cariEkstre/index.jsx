@@ -90,8 +90,8 @@ export const CariEkstre = () => {
 
   // Tablo kolonları
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.15},
-    BILGI: {mobile: 0.4, tablet: 0.25},
+    TARIH: {mobile: 0.3, tablet: 0.25},
+    BILGI: {mobile: 0.4, tablet: 0.3},
     GTUTAR: {mobile: 0.3, tablet: 0.15},
     CTUTAR: {mobile: 0.3, tablet: 0.15},
     HARTIP: {mobile: 0.3, tablet: 0.15},
@@ -137,8 +137,15 @@ export const CariEkstre = () => {
       width: COLUMN_WIDTHS.HARTIP,
       isCentered: true,
     },
-    {text: item.formtur || '', width: COLUMN_WIDTHS.FORMTUR},
-    {text: item.acik || '', width: COLUMN_WIDTHS.ACIKLAMA},
+    {
+      text: item.formtur || '',
+      width: COLUMN_WIDTHS.FORMTUR,
+      isCentered: true,
+    },
+    {
+      text: item.acik || '',
+      width: COLUMN_WIDTHS.ACIKLAMA,
+    },
   ];
 
   return (

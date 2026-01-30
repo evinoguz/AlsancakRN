@@ -45,12 +45,12 @@ export const MyCheckBook = () => {
     );
   }, [filteredItems]);
 
-  const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.15},
+  const COLUMN_WIDTHS = useResponsiveColumns({ 
+    TARIH: {mobile: 0.3, tablet: 0.2},
     AVKAYIT: {mobile: 0.4, tablet: 0.3},
-    CCTUT: {mobile: 0.3, tablet: 0.2},
+    CCTUT: {mobile: 0.3, tablet: 0.3},
     CNOSU: {mobile: 0.3, tablet: 0.2},
-    CVADETAR: {mobile: 0.3, tablet: 0.15},
+    CVADETAR: {mobile: 0.3, tablet: 0.25},
     CBANKA: {mobile: 0.4, tablet: 0.25},
   });
 

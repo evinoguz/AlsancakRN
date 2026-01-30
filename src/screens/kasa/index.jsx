@@ -143,6 +143,7 @@ export const Kasa = () => {
     {
       text: item.hartipi || '',
       width: COLUMN_WIDTHS.HARTIP,
+      isCentered: true,
     },
     {
       text: item.halno || '',
