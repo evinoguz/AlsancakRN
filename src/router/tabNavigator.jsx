@@ -31,11 +31,11 @@ const TabNavigator = () => {
         tabBarActiveTintColor: Colors.PRIMARY,
         tabBarInactiveTintColor: Colors.BLACK,
         headerTitleAlign: 'center',
-        tabBarStyle: {
-          paddingVertical: 4,
-          paddingBottom: 6,
-          height: 50,
-        },
+        // tabBarStyle: {
+        //   paddingVertical: 4,
+        //   paddingBottom: 6,
+        //   height: 50,
+        // },
         headerShown: false,
         safeAreaInsets: {bottom: 0},
         tabBarIcon: ({size, color, focused}) => {
