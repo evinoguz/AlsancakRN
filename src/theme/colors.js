@@ -1,0 +1,20 @@
+const Colors = {
+  PRIMARY: '#0866ff',
+  PRIMARY_DISABLED: '#7ca6f0ff',
+  PRIMARY_LINK: '#0F4C9A',
+  LIGHT_PRIMARY: '#E6F0FF',
+  RED: '#DC3545',
+  DARK_RED: '#A91D3A',
+  GRAY: '#6f757d',
+  LIGHT_GRAY: '#444',
+  DARK_GRAY: '#333',
+  SOFT_GRAY: '#ccc',
+  BLACK: '#242424',
+  LIGHT_WHITE: '#F2F2F2',
+  WHITE: '#FFF',
+  GREEN: '#008a4c',
+  LIGHT_GREEN: '#25D366',
+  YELLOW: '#f4f4acff',
+  LIGHT_YELLOW: '#ffffc7',
+};
+export {Colors};
