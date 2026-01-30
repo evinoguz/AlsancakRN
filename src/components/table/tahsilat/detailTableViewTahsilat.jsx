@@ -2,7 +2,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {formatCurrency, formatDate} from '../../../utils/functions';
-import {width} from '../../../utils/constants';
 import {DetailDataTable} from '../detailDataTable';
 import {Colors} from '../../../theme/colors';
 import {useResponsiveColumns} from '../../../hooks/useResponsiveColumns';
@@ -13,13 +12,13 @@ export const DetailTableViewTahsilat = ({
   ListEmptyComponent,
 }) => {
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.2, tablet: 0.12},
-    UN: {mobile: 0.3, tablet: 0.22},
-    TAHSILTUTAR: {mobile: 0.25, tablet: 0.16},
-    ODTUTAR: {mobile: 0.25, tablet: 0.16},
-    SAYI: {mobile: 0.15, tablet: 0.1},
-    ACIK: {mobile: 0.3, tablet: 0.18},
-    BILGI: {mobile: 0.25, tablet: 0.16},
+    TARIH: {mobile: 0.2, tablet: 0.18},
+    UN: {mobile: 0.3, tablet: 0.35},
+    TAHSILTUTAR: {mobile: 0.25, tablet: 0.22},
+    ODTUTAR: {mobile: 0.25, tablet: 0.22},
+    SAYI: {mobile: 0.15, tablet: 0.14},
+    ACIK: {mobile: 0.3, tablet: 0.32},
+    BILGI: {mobile: 0.25, tablet: 0.28},
   });
 
   const columns = [

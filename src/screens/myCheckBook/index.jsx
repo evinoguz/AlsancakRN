@@ -46,12 +46,12 @@ export const MyCheckBook = () => {
   }, [filteredItems]);
 
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.12},
-    AVKAYIT: {mobile: 0.4, tablet: 0.22},
-    CCTUT: {mobile: 0.3, tablet: 0.14},
-    CNOSU: {mobile: 0.3, tablet: 0.14},
-    CVADETAR: {mobile: 0.3, tablet: 0.14},
-    CBANKA: {mobile: 0.4, tablet: 0.22},
+    TARIH: {mobile: 0.3, tablet: 0.15},
+    AVKAYIT: {mobile: 0.4, tablet: 0.3},
+    CCTUT: {mobile: 0.3, tablet: 0.2},
+    CNOSU: {mobile: 0.3, tablet: 0.2},
+    CVADETAR: {mobile: 0.3, tablet: 0.15},
+    CBANKA: {mobile: 0.4, tablet: 0.25},
   });
 
   const columns = [

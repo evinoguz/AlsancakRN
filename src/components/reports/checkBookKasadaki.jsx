@@ -4,7 +4,6 @@ import {useGetAllCheckBookKasadakiQuery} from '../../store/slices/checkBookSlice
 import {ScrollableDataTable} from '../table/scrollableDataTable';
 import {formatCurrency, formatDate, normalizeText} from '../../utils/functions';
 import {Colors} from '../../theme/colors';
-import {width} from '../../utils/constants';
 import {defaultStyles} from '../../styles/defaultStyle';
 import CustomInput from '../ui/customInput';
 import {Search} from '../../assets/icons';
@@ -48,11 +47,11 @@ const CheckBookKasadaki = () => {
 
   const COLUMN_WIDTHS = useResponsiveColumns({
     TARIH: {mobile: 0.3, tablet: 0.15},
-    AVKAYIT: {mobile: 0.4, tablet: 0.25},
-    CGTUT: {mobile: 0.3, tablet: 0.15},
-    CNOSU: {mobile: 0.3, tablet: 0.15},
+    AVKAYIT: {mobile: 0.4, tablet: 0.3},
+    CGTUT: {mobile: 0.3, tablet: 0.2},
+    CNOSU: {mobile: 0.3, tablet: 0.2},
     CVADETAR: {mobile: 0.3, tablet: 0.15},
-    CBANKA: {mobile: 0.4, tablet: 0.15},
+    CBANKA: {mobile: 0.4, tablet: 0.25},
   });
 
   const columns = [

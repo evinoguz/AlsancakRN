@@ -1,27 +1,32 @@
 import {useMemo} from 'react';
 import {useWindowDimensions} from 'react-native';
 
-const TABLET_BREAKPOINT = 768;
-
 export const useResponsiveColumns = ratios => {
-  const {width} = useWindowDimensions();
-  const isTablet = width >= TABLET_BREAKPOINT;
+  const {width, height} = useWindowDimensions();
+  const shortestSide = Math.min(width, height);
+  const isTablet = shortestSide >= 600;
 
   return useMemo(() => {
-    // 📱 Mobile → direkt px (scroll)
-    if (!isTablet) {
+    // 📊 Toplam oranlar
+    const totalTabletRatio = Object.values(ratios).reduce(
+      (sum, r) => sum + r.tablet,
+      0,
+    );
+
+    const shouldScrollOnTablet = totalTabletRatio > 1;
+
+    // 📱 Mobile → her zaman scroll (px)
+    if (!isTablet || shouldScrollOnTablet) {
       return Object.fromEntries(
         Object.keys(ratios).map(key => [key, width * ratios[key].mobile]),
       );
     }
 
-    // 📲 Tablet → oranla sığdır
-    const total = Object.values(ratios).reduce((sum, r) => sum + r.tablet, 0);
-
+    // 📲 Tablet → sığdır (oran normalize)
     return Object.fromEntries(
       Object.keys(ratios).map(key => [
         key,
-        width * (ratios[key].tablet / total),
+        width * (ratios[key].tablet / totalTabletRatio),
       ]),
     );
   }, [width, isTablet, ratios]);

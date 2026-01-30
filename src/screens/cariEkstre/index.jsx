@@ -7,7 +7,7 @@ import {formatCurrency, formatDate, normalizeText} from '../../utils/functions';
 import {useGetAllCariKartQuery} from '../../store/slices/cariListSlice';
 import {CustomDropDown} from '../../components/ui/customDropDown';
 import {useGetAllCariEkstreQuery} from '../../store/slices/cariEkstreSlice';
-import {height, width} from '../../utils/constants';
+import {height} from '../../utils/constants';
 import {ScrollableDataTable} from '../../components/table/scrollableDataTable';
 import CustomInput from '../../components/ui/customInput';
 import SumCountArea from '../../components/ui/sumCountArea';
@@ -90,13 +90,13 @@ export const CariEkstre = () => {
 
   // Tablo kolonları
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.12},
-    BILGI: {mobile: 0.4, tablet: 0.22},
-    GTUT: {mobile: 0.3, tablet: 0.14},
-    CTUT: {mobile: 0.3, tablet: 0.14},
-    HARTIP: {mobile: 0.3, tablet: 0.1},
-    FORMTUR: {mobile: 0.3, tablet: 0.1},
-    ACIK: {mobile: 0.4, tablet: 0.18},
+    TARIH: {mobile: 0.3, tablet: 0.15},
+    BILGI: {mobile: 0.4, tablet: 0.25},
+    GTUTAR: {mobile: 0.3, tablet: 0.15},
+    CTUTAR: {mobile: 0.3, tablet: 0.15},
+    HARTIP: {mobile: 0.3, tablet: 0.15},
+    FORMTUR: {mobile: 0.3, tablet: 0.15},
+    ACIKLAMA: {mobile: 0.4, tablet: 0.25},
   });
 
   const columns = [

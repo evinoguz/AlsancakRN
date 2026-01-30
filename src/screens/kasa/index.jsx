@@ -71,14 +71,14 @@ export const Kasa = () => {
   }, [search, kasaItems]);
 
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.12},
-    UNVAN: {mobile: 0.4, tablet: 0.22},
-    HALNO: {mobile: 0.3, tablet: 0.12},
-    GTUTAR: {mobile: 0.3, tablet: 0.14},
-    CTUTAR: {mobile: 0.3, tablet: 0.14},
-    HARTIP: {mobile: 0.3, tablet: 0.1},
-    BILGI: {mobile: 0.4, tablet: 0.18},
-    ACIKLAMA: {mobile: 0.4, tablet: 0.22},
+    TARIH: {mobile: 0.3, tablet: 0.15},
+    UNVAN: {mobile: 0.4, tablet: 0.25},
+    GTUTAR: {mobile: 0.3, tablet: 0.2},
+    CTUTAR: {mobile: 0.3, tablet: 0.2},
+    HARTIP: {mobile: 0.3, tablet: 0.2},
+    HALNO: {mobile: 0.3, tablet: 0.2},
+    BILGI: {mobile: 0.4, tablet: 0.25},
+    ACIKLAMA: {mobile: 0.4, tablet: 0.25},
   });
 
   const columns = [

@@ -6,12 +6,11 @@ import {Search} from '../../assets/icons';
 import {formatCurrency, normalizeText} from '../../utils/functions';
 import {useGetAllMizanQuery} from '../../store/slices/mizanSlice';
 import {defaultStyles} from '../../styles/defaultStyle';
-import {width} from '../../utils/constants';
 import {ScrollableDataTable} from '../../components/table/scrollableDataTable';
 import SumCountArea from '../../components/ui/sumCountArea';
 import ListEmptyArea from '../../components/ui/listEmptyArea';
 import {PhoneRow} from '../../components/ui/phoneRow';
-import { useResponsiveColumns } from '../../hooks/useResponsiveColumns';
+import {useResponsiveColumns} from '../../hooks/useResponsiveColumns';
 
 export const Mizan = () => {
   const [search, setSearch] = useState('');

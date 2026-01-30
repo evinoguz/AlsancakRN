@@ -2,7 +2,6 @@ import React, {useMemo, useState} from 'react';
 import {View} from 'react-native';
 import {useGetAllCheckBookTakastakiQuery} from '../../store/slices/checkBookSlice';
 import {Colors} from '../../theme/colors';
-import {width} from '../../utils/constants';
 import {defaultStyles} from '../../styles/defaultStyle';
 import CustomInput from '../ui/customInput';
 import {Search} from '../../assets/icons';
@@ -47,14 +46,14 @@ const CheckBookTakastaki = () => {
   }, [filteredItems]);
 
   const COLUMN_WIDTHS = useResponsiveColumns({
-    TARIH: {mobile: 0.3, tablet: 0.12},
-    AVKAYIT: {mobile: 0.4, tablet: 0.22},
-    CGTUT: {mobile: 0.3, tablet: 0.14},
-    CNOSU: {mobile: 0.3, tablet: 0.12},
-    CVADETAR: {mobile: 0.3, tablet: 0.12},
-    CBANKA: {mobile: 0.4, tablet: 0.14},
-    CVERTAR: {mobile: 0.3, tablet: 0.12},
-    VKAYIT: {mobile: 0.3, tablet: 0.12},
+    TARIH: {mobile: 0.3, tablet: 0.15},
+    AVKAYIT: {mobile: 0.4, tablet: 0.3},
+    CGTUT: {mobile: 0.3, tablet: 0.2},
+    CNOSU: {mobile: 0.3, tablet: 0.2},
+    CVADETAR: {mobile: 0.3, tablet: 0.15},
+    CBANKA: {mobile: 0.4, tablet: 0.25},
+    CVERTAR: {mobile: 0.3, tablet: 0.15},
+    VKAYIT: {mobile: 0.3, tablet: 0.15},
   });
 
   const columns = [
@@ -83,7 +82,7 @@ const CheckBookTakastaki = () => {
       width: COLUMN_WIDTHS.CBANKA,
     },
     {
-      label: 'C.VER TARIHI',
+      label: 'C.VER TARİHİ',
       width: COLUMN_WIDTHS.CVERTAR,
     },
     {
