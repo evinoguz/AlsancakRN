@@ -45,7 +45,7 @@ export const CariEkstre = () => {
       return [];
     }
     return cariList.map(c => ({
-      label: `${c.un} - ${c.CRsube ?? ''}`,
+      label: c.un,
       value: c.id,
     }));
   }, [isCariListLoading, isCariListFetching, cariListError, cariList]);
